@@ -1,0 +1,22 @@
+baseURL = 'https://clearedcache.dev/'
+locale = 'en-us'
+title = 'Cleared Cache'
+theme = 'hugo-profile'
+
+[params]
+  darkMode = true
+  fixedTopbar = true 
+
+[menu]
+  [[menu.main]]
+    name = "About Me"
+    url = "/#about"        # Anchor to the homepage about block
+    weight = 10
+  [[menu.main]]
+    name = "Experience"
+    url = "/#experience"   # Anchor to your professional timeline block
+    weight = 20
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"        # Fully isolates your chronological blog articles
+    weight = 30
