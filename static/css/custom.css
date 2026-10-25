@@ -1,0 +1,33 @@
+/* Cleared Cache: "Engineering Journal" typography.
+   Serif headlines (Source Serif 4) + clean sans body (Inter).
+   Self-hosting these fonts later avoids the Google Fonts request. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap');
+
+:root {
+  --cc-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --cc-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+body {
+  font-family: var(--cc-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--cc-serif);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+.navbar, .navbar-brand, .nav-link {
+  font-family: var(--cc-sans);
+  letter-spacing: 0.01em;
+}
+
+/* Keep long-form text at a readable measure (~70 characters).
+   Confirm the exact post-body selector in browser dev tools and adjust if needed. */
+article p, article li {
+  max-width: 70ch;
+}

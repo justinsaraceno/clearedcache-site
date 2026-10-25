@@ -3,9 +3,84 @@ locale = 'en-us'
 title = 'Cleared Cache'
 theme = 'hugo-profile'
 
+enableRobotsTXT = true
+
 [params]
+  # Fixes the "ZgotmplZ" meta description and gives search/social previews real text
+  description = "An engineering management blog on resetting outdated assumptions: tech debt, legacy habits, and leading modern engineering teams."
   darkMode = true
-  fixedTopbar = true 
+  fixedTopbar = true
+
+# Typography (families are set in static/css/custom.css)
+  [params.font]
+    fontSize = "1.05rem"
+    fontWeight = "400"
+    lineHeight = "1.7"
+    textAlign = "left"
+ 
+  # Concept 1: "Engineering Journal" palette (deep teal accent)
+  [params.color]
+    textColor = "#1A1A1A"
+    secondaryTextColor = "#5B5F66"
+    backgroundColor = "#FAFAF8"
+    secondaryBackgroundColor = "#F1F1EC"
+    primaryColor = "#0F766E"
+    secondaryColor = "#F1F1EC"
+ 
+    [params.color.darkmode]
+      textColor = "#E6E6E3"
+      secondaryTextColor = "#A3A7AD"
+      backgroundColor = "#121416"
+      secondaryBackgroundColor = "#1B1E21"
+      primaryColor = "#2DD4BF"
+      secondaryColor = "#1B1E21"
+ 
+  [params.navbar]
+    align = "ms-auto"
+    brandName = "Cleared Cache"
+    disableSearch = true   # re-enable once there are several posts
+ 
+    # Navigation comes from [menu.main] below, so hide the portfolio-style sections
+    [params.navbar.menus]
+      disableAbout = true
+      disableExperience = true
+      disableEducation = true
+      disableProjects = true
+      disableAchievements = true
+      disableContact = true
+ 
+  # Homepage hero: a short thesis plus a clear path into the writing
+  [params.hero]
+    enable = true
+    intro = "Engineering leadership, rethought"
+    title = "Cleared Cache."
+    subtitle = "Resetting the assumptions behind how we build and lead."
+    content = "Notes from an engineering manager on tech debt, legacy operating habits, and updating management practice to match how software teams actually work today."
+    image = "/images/cleared-cache-grid.svg"
+    roundImage = false   # keep the grid square; a circle crop would cut off the corners
+
+    [params.hero.bottomImage]
+      enable = false
+ 
+    [params.hero.button]
+      enable = true
+      name = "Read the Insights"
+      url = "/posts/"
+      download = false
+ 
+  # Turn off the unused portfolio sections on the homepage
+  [params.about]
+    enable = false
+  [params.experience]
+    enable = false
+  [params.education]
+    enable = false
+  [params.projects]
+    enable = false
+  [params.achievements]
+    enable = false
+  [params.contact]
+    enable = false
 
 [menu]
   [[menu.main]]
