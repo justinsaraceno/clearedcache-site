@@ -14,4 +14,6 @@ Cleared Cache is for people thinking about how engineering teams build, maintain
 
 The best place to start is with a question from your own work: a legacy practice you're reconsidering, a technical trade-off your team is navigating, or a management assumption that no longer fits.
 
-Browse the [Insights](/posts/) for topics that may spark a conversation. More ways to get in touch can be added here as the site grows.
+Browse the [Insights](/posts/) for topics that may spark a conversation, or send a message using the form below.
+
+{{< connect-form >}}

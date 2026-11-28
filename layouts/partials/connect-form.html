@@ -1,0 +1,14 @@
+<form action="https://shipmyform.com/f/frm_yFsMGuz82S74ftkrrnMo" method="POST" class="connect-form">
+  <input type="hidden" name="_redirect" value="{{ "thank-you/" | absURL }}">
+  <div class="mb-3">
+    <label for="connect-email" class="form-label">Email</label>
+    <input id="connect-email" type="email" name="email" class="form-control" placeholder="you@example.com" autocomplete="email" required>
+  </div>
+  <div class="mb-3">
+    <label for="connect-message" class="form-label">Message</label>
+    <textarea id="connect-message" name="message" class="form-control" rows="5" placeholder="What management topics would you like to discuss?"></textarea>
+    <!-- spam honeypot: leave empty -->
+  </div>
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+  <button type="submit" class="btn btn-primary">Send</button>
+</form>
